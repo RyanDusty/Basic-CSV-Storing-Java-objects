@@ -6,6 +6,9 @@ import java.util.Scanner;
 
 
 public class CSV {
+    public Object loadFromCSV;
+
+
     public void saveToCSV(BankAccount account, String filepath) {
             try (FileWriter writer = new FileWriter(filepath, true)) {
                 writer.write(
